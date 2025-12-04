@@ -1,0 +1,24 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "data_engineering",
+    "user": "postgres",
+    "password": "postgres"
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "logs/pipeline.log"
+  },
+  "pipeline": {
+    "batch_size": 1000,
+    "drop_duplicates": true,
+    "drop_null_threshold": 0.5
+  },
+  "api": {
+    "timeout": 30,
+    "retry_attempts": 3
+  }
+}
+
